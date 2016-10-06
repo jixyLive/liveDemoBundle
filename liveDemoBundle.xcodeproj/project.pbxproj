@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A598C2272F4B5C78A5BE675 /* libPods-liveDemoBundle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBCDBAD523E88ED794D3681D /* libPods-liveDemoBundle.a */; };
-		843184D61D3FB1BD00103EB7 /* LeftMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843184D51D3FB1BD00103EB7 /* LeftMainViewController.m */; };
 		843184E81D3FB85C00103EB7 /* backValue_blockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843184D91D3FB85C00103EB7 /* backValue_blockVC.m */; };
 		843184E91D3FB85C00103EB7 /* backValue_blockVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 843184DB1D3FB85C00103EB7 /* backValue_blockVC2.m */; };
 		843184EA1D3FB85C00103EB7 /* backValue_delegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843184DD1D3FB85C00103EB7 /* backValue_delegateVC.m */; };
@@ -30,6 +29,7 @@
 		845CBBFD1D609A49002377E0 /* icon_Movie_Star_rating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845CBBFC1D609A49002377E0 /* icon_Movie_Star_rating@2x.png */; };
 		845CBBFF1D609AA6002377E0 /* icon_cafe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 845CBBFE1D609AA5002377E0 /* icon_cafe@2x.png */; };
 		845CBC011D609F9A002377E0 /* MapKitCalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CBC001D609F9A002377E0 /* MapKitCalloutAnnotation.m */; };
+		846323611DA6308A0038241D /* LeftMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846323601DA6308A0038241D /* LeftMainViewController.m */; };
 		848C08451D3E674900ED0FF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C08441D3E674900ED0FF3 /* main.m */; };
 		848C08481D3E674900ED0FF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C08471D3E674900ED0FF3 /* AppDelegate.m */; };
 		848C08501D3E674900ED0FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848C084F1D3E674900ED0FF3 /* Assets.xcassets */; };
@@ -52,8 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		843184D41D3FB1BD00103EB7 /* LeftMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftMainViewController.h; path = ../LeftMainViewController.h; sourceTree = "<group>"; };
-		843184D51D3FB1BD00103EB7 /* LeftMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftMainViewController.m; path = ../LeftMainViewController.m; sourceTree = "<group>"; };
 		843184D81D3FB85C00103EB7 /* backValue_blockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backValue_blockVC.h; sourceTree = "<group>"; };
 		843184D91D3FB85C00103EB7 /* backValue_blockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = backValue_blockVC.m; sourceTree = "<group>"; };
 		843184DA1D3FB85C00103EB7 /* backValue_blockVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backValue_blockVC2.h; sourceTree = "<group>"; };
@@ -88,6 +86,8 @@
 		845CBBFC1D609A49002377E0 /* icon_Movie_Star_rating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_Movie_Star_rating@2x.png"; path = "../../../../Downloads/11 MapAndLocation/MapKit/MapKit/Images.xcassets/icon_Movie_Star_rating.imageset/icon_Movie_Star_rating@2x.png"; sourceTree = "<group>"; };
 		845CBBFE1D609AA5002377E0 /* icon_cafe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_cafe@2x.png"; path = "../../../../Downloads/11 MapAndLocation/MapKit/MapKit/Images.xcassets/icon_classify_cafe.imageset/icon_cafe@2x.png"; sourceTree = "<group>"; };
 		845CBC001D609F9A002377E0 /* MapKitCalloutAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitCalloutAnnotation.m; sourceTree = "<group>"; };
+		8463235F1DA6308A0038241D /* LeftMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMainViewController.h; sourceTree = "<group>"; };
+		846323601DA6308A0038241D /* LeftMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMainViewController.m; sourceTree = "<group>"; };
 		848C08401D3E674900ED0FF3 /* liveDemoBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liveDemoBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848C08441D3E674900ED0FF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		848C08461D3E674900ED0FF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -258,8 +258,8 @@
 				848C087A1D3F591A00ED0FF3 /* 主页@3x.png */,
 				848C08691D3F53DF00ED0FF3 /* MainViewController.h */,
 				848C086A1D3F53DF00ED0FF3 /* MainViewController.m */,
-				843184D41D3FB1BD00103EB7 /* LeftMainViewController.h */,
-				843184D51D3FB1BD00103EB7 /* LeftMainViewController.m */,
+				8463235F1DA6308A0038241D /* LeftMainViewController.h */,
+				846323601DA6308A0038241D /* LeftMainViewController.m */,
 				848C086F1D3F565400ED0FF3 /* MidMainViewController.h */,
 				848C08701D3F565400ED0FF3 /* MidMainViewController.m */,
 				848C08721D3F566800ED0FF3 /* RightMainViewController.h */,
@@ -430,12 +430,12 @@
 				848C08451D3E674900ED0FF3 /* main.m in Sources */,
 				843184ED1D3FB85C00103EB7 /* backValue_notificationVC2.m in Sources */,
 				843184F51D40A66400103EB7 /* MapKitView.m in Sources */,
-				843184D61D3FB1BD00103EB7 /* LeftMainViewController.m in Sources */,
 				848C086B1D3F53DF00ED0FF3 /* MainViewController.m in Sources */,
 				843184FE1D43A02900103EB7 /* MapKitAnnotation.m in Sources */,
 				845CBC011D609F9A002377E0 /* MapKitCalloutAnnotation.m in Sources */,
 				848C08711D3F565400ED0FF3 /* MidMainViewController.m in Sources */,
 				843184EF1D3FB85C00103EB7 /* backValueSencondaryView.m in Sources */,
+				846323611DA6308A0038241D /* LeftMainViewController.m in Sources */,
 				843184E81D3FB85C00103EB7 /* backValue_blockVC.m in Sources */,
 				84D5F90D1D71D89D00368654 /* WelcomePageController.m in Sources */,
 				845CBBF91D608E70002377E0 /* MapKitCalloutAnnotation.h in Sources */,
