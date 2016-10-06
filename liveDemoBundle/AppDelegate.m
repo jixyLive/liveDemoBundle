@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+//#import "MainViewController.h"
+#import "WelcomePageController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,64 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+   // MainViewController *main = [[MainViewController alloc]init];
+   // main.selectedIndex = 1;
+ //   self.window.rootViewController = main;
+    WelcomePageController *vc = [[WelcomePageController alloc]init];
+    self.window.rootViewController = vc;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self setAppearance];
+   // [self guidePages];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}/*
+- (void)guidePages
+{
+    //数据源
+    NSArray *imageArray = @[ @"1.jpg", @"2.jpg", @"3.jpg", @"4.jpg" ];
+    
+    //  初始化方法1
+    welcomePage *welcome = [[welcomePage alloc] init];
+    welcome.images = imageArray;
+    __weak typeof(welcomePage) *weakView = welcome;
+    //__weak typeof(self) *weakSelf = *self;
+    welcome.buttonAction = ^{
+        [UIView animateWithDuration:2.0f
+                         animations:^{
+                             weakView.alpha = 0.0;
+                         }
+                         completion:^(BOOL finished) {
+                             [weakView removeFromSuperview];
+                             MainViewController *main = [[MainViewController alloc]init];
+                             // main.selectedIndex = 1;
+                             self.window.rootViewController = main;
+                         }];
+    };
+    
+    //  初始化方法2
+    //    MZGuidePagesController *welcome = [[MZGuidePagesController alloc]
+    //    initWithImageDatas:imageArray
+    //                                                                            completion:^{
+    //                                                                              NSLog(@"click!");
+    //
+    //要在makeKeyAndVisible之后调用才有效
+    [self.window addSubview:welcome];
+    NSLog(@"what?");
+    
+}*/
+- (void)setAppearance{
+    
+    [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //tabbar
+    [[UITabBar appearance] setTranslucent:NO];
+        //颜色
+    [[UITabBar appearance]setBarTintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]];
+        //点击后颜色
+    [[UITabBar appearance]setTintColor:[UIColor colorWithRed:86.0/255.0 green:171.0/255.0 blue:228.0/255.0 alpha:1.0]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
